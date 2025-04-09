@@ -1,0 +1,25 @@
+{
+  "name": "@pocketcomputer/adapters",
+  "version": "1.1.0",
+  "description": "",
+  "license": "MIT",
+  "author": "Chris Nolet <chris@relaunch.io>",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepare": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@pocketcomputer/core": "^1.1.0"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./openai-realtime": "./dist/openai-realtime/index.js"
+  }
+}
