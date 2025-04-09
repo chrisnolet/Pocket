@@ -1,0 +1,14 @@
+{
+  "name": "pocket-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "publish": "npm publish --workspaces --access public"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

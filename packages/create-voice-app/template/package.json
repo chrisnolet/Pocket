@@ -1,0 +1,19 @@
+{
+  "name": "pocket-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon --exec ts-node src/index.ts"
+  },
+  "dependencies": {
+    "@pocketcomputer/core": "file:../../packages/core"
+  },
+  "devDependencies": {
+    "nodemon": "^3",
+    "ts-node": "^10",
+    "typescript": "^5"
+  }
+}
