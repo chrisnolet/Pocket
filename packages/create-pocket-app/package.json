@@ -17,5 +17,12 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "chalk": "^5",
+    "prompts": "^2"
+  },
+  "devDependencies": {
+    "@types/prompts": "^2"
   }
 }
