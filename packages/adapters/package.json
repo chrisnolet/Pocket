@@ -16,10 +16,14 @@
     "access": "public"
   },
   "dependencies": {
-    "@pocketcomputer/core": "^1.1.0"
+    "@pocketcomputer/core": "^1.1.0",
+    "react": "^19.0.0"
   },
   "exports": {
     ".": "./dist/index.js",
     "./openai-realtime": "./dist/openai-realtime/index.js"
+  },
+  "devDependencies": {
+    "@types/react": "^19"
   }
 }
