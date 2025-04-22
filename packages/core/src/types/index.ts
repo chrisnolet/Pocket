@@ -15,3 +15,8 @@ export type Tool = {
     };
   };
 };
+
+export type ToolCall = {
+  name: string;
+  arguments: string;
+};
