@@ -1,13 +1,21 @@
 "use client";
 
+import { App } from "@/lib/app";
 import { useRealtime } from "@pocketcomputer/adapters/openai-realtime";
+import { Model } from "@pocketcomputer/core";
 import { useState } from "react";
 
 export default function Home() {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
+  const handleReady = async (model: Model) => {
+    const app = new App();
+    await app.main(model);
+  };
+
   const { isConnecting, isConnected, connect, disconnect, audioElementRef } = useRealtime({
     tokenUrl: "/api/token",
+    onReady: handleReady,
     onError: setErrorMessage,
   });
 
